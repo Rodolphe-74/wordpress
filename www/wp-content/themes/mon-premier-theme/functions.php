@@ -37,6 +37,45 @@ function montheme_title($title){
     return 'Salut';
 }
 
+function montheme_pagination() {
+    $pages = paginate_links(['type' => 'array']);
+    if($pages === null) {
+        return;
+    }
+    echo '<nav aria-label="Pagination" class = "mt-4 mb-4">';
+    echo '<ul class="pagination">';
+
+    foreach($pages as $page){
+        $active = strpos($page,'current') !== false;
+        $class = 'page-item';
+        if($active){
+            $class .= 'active';
+        }
+        echo '<li class="' . $class . '">';
+        echo str_replace('page-numbers','page-link', $page);
+        echo'</li>';
+    }
+    echo '</ul>';
+    echo '</nav>';
+}
+
+function montheme_init(){
+    register_post_type('projets',[
+        'label' =>'projet',
+        'public' => true,
+        'menu_position' => 3,
+        'menu_icon' => 'dashicons-cover-image',
+        'supports' => ['title', 'editor', 'thumbnail'],
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'rewrite' => [
+            'slug' => 'projet',
+            'with_front' => true
+        ],
+    ]);
+}
+add_action('init','montheme_init');
+
 /*function get_background_image() {
     return get_theme_mod( 'background_image', get_theme_support( 'custom-background', 'default-image' ) );
 }*/
@@ -51,7 +90,14 @@ add_action('after_setup_theme', function(){
     add_theme_support('menus');
     register_nav_menu('header','En tête du menu');
     register_nav_menu('footer','Pied de page');
+
+    add_image_size('card-header', 350, 215, true);
+
 });
 
 add_filter('wp_title','montheme_title');
+
+require_once('metaboxes/sponso.php');
+SponsoMetaBox::register();
+
 

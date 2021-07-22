@@ -1,18 +1,19 @@
 <?php get_header(); ?>
 
-<?php single_post_title(); ?>
+<h1>Voir tous nos projets</h1>
 
 <?php if (have_posts()): ?>
 <div class="row">
     <?php while (have_posts()): the_post(); ?>
     <div class="col-sm-4">
-        <?php get_template_part('parts/card', 'post'); ?>
+            <?php get_template_part('parts/card', 'post'); ?>
     </div>
-    <?php endwhile ?>
+    <?php endwhile; ?>
+</div>
 
    <?php montheme_pagination() ?>
+<?= paginate_links(); ?>
 
-</div>
 <?php else: ?>
     <h1> Pas d'article </h1>
 <?php endif; ?>

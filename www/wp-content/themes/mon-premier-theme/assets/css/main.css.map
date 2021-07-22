@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,GACE,cAAgB,CAGlB,KACE,sBAAuB,CAGzB,MACE,mBAAa,CAAb,YAAa,CACb,sBAAmB,CAAnB,kBAAmB","file":"main.css","sourcesContent":["h1{\n  font-size : 12px;\n}\n\nbody{\n  background-color: green;\n}\n\n.test{\n  display: flex;\n  flex-direction: row;\n}"]}
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,GACE,cAAgB,CAMlB,iBACE,0DAA6D","file":"main.css","sourcesContent":["h1{\n  font-size : 18px;\n}\n\nbody{\n}\n\n.backgroundImage{\n  background-image: url(\"../../image/landscape-78058_1920.jpg\");\n}"]}
