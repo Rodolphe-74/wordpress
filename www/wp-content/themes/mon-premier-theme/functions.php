@@ -28,7 +28,7 @@ function wordpress_scripts_loader()
 
 function montheme_register_asset () {
     wp_register_style('bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
-    wp_register_script('bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js');
+    wp_register_script('bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', ['jquery']);
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
 }

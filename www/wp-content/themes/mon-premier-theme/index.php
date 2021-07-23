@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php single_post_title(); ?>
-
 <?php if (have_posts()): ?>
 <div class="row">
     <?php while (have_posts()): the_post(); ?>

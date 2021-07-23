@@ -1,10 +1,110 @@
+@import 'NavbarHomePage.scss';
+@import 'footer.scss';
+@import 'Front-page.scss';
+@import 'projet.scss';
+@import 'Card.scss';
+
 h1{
-  font-size : 18px;
+  font-size : 50px;
 }
 
 body{
+  &:before {
+    content: '';
+    background-image: url("../../image/pexels-negative-space-169573.jpg");
+    background-repeat : no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+  }
+  min-height:100%;
+  margin:0;
+  padding:0;
+  padding-top:30px;
+  position:relative;
 }
 
-.backgroundImage{
-  background-image: url("../../image/landscape-78058_1920.jpg");
+.navbar, .container {
+  position: relative;
+}
+
+.centered{
+  text-align: center;
+}
+
+body.home {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+.titreContact{
+  text-align:center;
+  font-size : 30px;
+  font-weight: bold;
+  padding : 40px 0 ;
+}
+
+.formulaire{
+  margin-left: auto;
+  margin-right: auto;
+  width : 80%;
+  input, textarea {
+    width:100%;
+    border-radius: 5px;
+  }
+  p{
+    color : white;
+  }
+}
+
+.cadreContact{
+  margin-top: 50px;
+  width : 40%;
+  height : 700px;
+  background-color: rgba(0,0,0,.4);
+  margin-left : 30%;
+  border-radius: 10px;
+}
+
+.container{
+  .titreContact {
+    color: white;
+  }
+}
+
+.container-fluid{
+  width:80%;
+}
+
+html{
+  height : 100%;
+}
+
+//a:hover{
+//  color: #34629c !important;
+//  transform: translateY(-3px);
+//}
+
+
+//=================== Surcharge Bootstrap =============================
+
+.bg-light {
+  background-color: #0c0c0c !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:white;
+  &.active{
+    color : #34629c;
+  }
+}
+
+.btn-outline-success{
+  color:#34629c;
+  border-color: #34629c;
 }
