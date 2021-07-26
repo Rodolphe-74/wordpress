@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 
-<h1>Voir tous nos projets</h1>
+<?php
+if ( function_exists('yoast_breadcrumb') ) {
+  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+}
+?>
+
+<h1 class="pageProjet">Mes projets</h1>
 
 <?php if (have_posts()): ?>
 <div class="row">
@@ -12,8 +18,9 @@
     <?php endwhile; ?>
 </div>
 
+<div>
    <?php montheme_pagination() ?>
-<?= paginate_links(); ?>
+</div>
 
 <?php else: ?>
     <h1> Pas d'article </h1>

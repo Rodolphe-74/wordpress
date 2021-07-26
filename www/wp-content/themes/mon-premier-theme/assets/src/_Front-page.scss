@@ -1,0 +1,56 @@
+.homepage{
+  h1{
+    font-size: 30px !important;
+    color:white;
+    padding:40px 0;
+  }
+  h2{
+    font-size: 20px !important;
+    color:white;
+  }
+  p{
+    font-size: 15px !important;
+    color:white;
+  }
+
+  .carousel{
+    img{
+      display: block;
+      max-height:250px;
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    margin-bottom: 30px;
+  }
+
+  > div:not(.carousel) {
+    width : 100%;
+    height : auto;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+    padding:20px;
+    padding-bottom:50px;
+
+    div:first-child{
+      div{
+        background-color: rgba(0,0,0,.5);
+        margin: 20px 0;
+        font-size: 30px;
+        padding: 20px 0;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .frontTitle{
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    margin: 20px 0;
+    color:white;
+    font-size: 30px;
+    padding: 20px 0;
+    border-radius: 10px;
+  }
+}
+

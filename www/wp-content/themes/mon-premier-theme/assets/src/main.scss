@@ -3,6 +3,9 @@
 @import 'Front-page.scss';
 @import 'projet.scss';
 @import 'Card.scss';
+@import 'article.scss';
+@import '_variable.scss';
+
 
 h1{
   font-size : 50px;
@@ -100,7 +103,10 @@ html{
 .navbar-light .navbar-nav .nav-link {
   color:white;
   &.active{
-    color : #34629c;
+    color : $blue-menu;
+  }
+  &:hover{
+    color : $blue-menu;
   }
 }
 

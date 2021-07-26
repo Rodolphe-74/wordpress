@@ -1,1 +1,0 @@
-{"version":3,"sources":["footer.scss"],"names":[],"mappings":"AAAA,OACE,eAAiB,CACjB,iBAAkB,CAClB,iBAAkB,CAClB,QAAQ,CACR,UAAW,CALb,0BAOI,UAAW","file":"footer.css","sourcesContent":["footer {\n  background: black;\n  text-align: center;\n  position: absolute;\n  bottom:0;\n  width: 100%;\n  .nav-link,a {\n    color:white;\n  }\n}"]}
