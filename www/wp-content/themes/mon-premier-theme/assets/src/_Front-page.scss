@@ -31,16 +31,6 @@
     border-radius: 10px;
     padding:20px;
     padding-bottom:50px;
-
-    div:first-child{
-      div{
-        background-color: rgba(0,0,0,.5);
-        margin: 20px 0;
-        font-size: 30px;
-        padding: 20px 0;
-        border-radius: 10px;
-      }
-    }
   }
 
   .frontTitle{
@@ -48,6 +38,14 @@
     text-align: center;
     margin: 20px 0;
     color:white;
+    font-size: 30px;
+    padding: 20px 0;
+    border-radius: 10px;
+  }
+
+  .wp-block-column{
+    background-color: rgba(0,0,0,.5);
+    margin: 20px;
     font-size: 30px;
     padding: 20px 0;
     border-radius: 10px;

@@ -1,3 +1,5 @@
+@import '_variable.scss';
+
 footer {
   background: black;
   text-align: center;
@@ -6,5 +8,8 @@ footer {
   width: 100%;
   .nav-link,a {
     color:white;
+  }
+  a:hover{
+    color:$blue-menu;
   }
 }

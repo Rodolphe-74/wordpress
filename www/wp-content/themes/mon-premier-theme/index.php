@@ -1,5 +1,14 @@
 <?php get_header(); ?>
 
+
+<div class="fil">
+    <?php
+    if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+    }
+    ?>
+</div>
+
 <?php if (have_posts()): ?>
 <div class="row parcours">
     <h1> Mon parcours </h1>

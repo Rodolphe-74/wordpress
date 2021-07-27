@@ -1,10 +1,12 @@
 <?php get_header(); ?>
 
+<div class="fil">
 <?php
 if ( function_exists('yoast_breadcrumb') ) {
   yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
 }
 ?>
+</div>
 
 <h1 class="pageProjet">Mes projets</h1>
 
